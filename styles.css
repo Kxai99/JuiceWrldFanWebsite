@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.google.com/specimen/Roboto') format('truetype'); /* Replace with actual font file path */
+    /* You can add more font properties here if needed */
+  }
+  
+
+body {
+    background-color: #161616;
+    font-family: 'Roboto', sans-serif; /* Use the font-family name defined earlier */
+    margin:0;
+    color :#f2f2f2
+     
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  padding: 10px 20px;
+  box-shadow: 0 15px 20px 15 #0000001a;
+  position: relative; /* Set position to relative */
+
+}
+
+.logo {
+ height: 70px;
+ width: auto;
+ transition: transform 0.3s ease;
+
+
+}
+
+.logo:hover {
+  color: rgb(231, 59, 88);
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow the navigation links to grow and take up remaining space */
+  justify-content: center; /* Horizontally center the navigation links */
+  margin-right: 200px;
+}
+
+
+
+.nav-links a {
+  color: #f2f2f2;
+  padding: 14px 10px;
+  font-size: 17px;
+  text-decoration: none;
+  margin-right: 100px; /* Adjust this for spacing between links */
+  position: relative;
+
+}
+
+.nav-links a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 2px; /* Adjust the width of the bar */
+  height: 70%; /* Adjust the height of the bar */
+  background-color: #3b3b3b; /* Adjust the color of the bars between the elements */
+  right: -50px; /* Position the bar to the right of the link */
+  top: 50%; /* Position the bar vertically in the middle of the link */
+  transform: translateY(-50%); /* Center the bar vertically */
+  transition: background-color 0.3s ease; /* Add transition for the bar */
+}
+
+.nav-links a:last-child {
+  margin-right: 0; /* Remove margin from the last link */
+}
+
+.nav-links a {
+  transition: color 0.5s ease, border-bottom 0.3s ease;
+}
+
+
+.nav-links a:hover {
+
+  color: rgb(231, 59, 88);
+  border-bottom: 2px solid rgb(255, 255, 255);
+
+}
+
+
+.Stats {
+  margin-top: 75px; /* Changes the spacing between the welcome message and the nav bar */
+  text-align: center;
+}
+
+.paragraph p {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.container {
+  display: flex;
+}
+
+.box {  /* Changes the information under the stream numbers */
+  flex: 1;
+  margin: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.box span { /* Changes the information // the stream numbers */
+  font-size: 75px;
+  display: block;
+
+}
+
+.stream-number {
+  color: rgb(231, 59, 88);
+  font-weight: bold;
+}
+
+.box .spotify,
+.box .soundcloud,
+.box .youtube {
+  padding-top: 35px;
+  height: 30px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  /* Remove filter: invert(100%); */
+  transition: filter 0.3s ease; /* Add transition for the filter */
+}
+
+.box .spotify:hover,
+.box .soundcloud:hover,
+.box .youtube:hover {
+  filter: brightness(0.7); /* Adjust the value for the desired color effect */
+}
+
+.box .pSpotify, .pSoundCloud, .pYouTube {
+  font-size: 15px;
+  font-weight:300px;
+}
+
+.hero-image {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.26), transparent), url("/assets/hero-juice.png");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 94px);
+  z-index: 1;
+}
+
+/*.hero-image__button {
+
+  font-family: 'Roboto', sans-serif ;
+  position: absolute;
+  top: 30%;
+  right: 15rem;
+  transform: translateY(-50%);
+  background-color: #1f1f1f;
+}
+*/
+
+.btn {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: 30%;
+  right: 10rem;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #1f1f1f;
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: rgb(231, 59, 88);
+  color: rgb(255, 255, 255);
+}
+
+.btn__discover {
+  font-weight: light;
+}
+
+.quote-overlay {
+  font-family: 'Roboto', sans-serif ;
+  font-style: italic;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 30%;
+  left: 6rem;
+}
+
+.quote-overlay .quote-author {
+  font-weight: bold !important;
+}
+
+/* Your existing styles above */
+
+.juice-portrait {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  transition: filter 0.3s ease;
+}
+
+.juice-portrait::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(231, 59, 88, 0.3);
+  opacity: 0; /* Start with transparent */
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.juice-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.juice-portrait:hover::before {
+  /* Show the overlay on hover */
+  opacity: 1;
+}
+
+
+.artist-about p {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+
+.about-background {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.26), transparent), url("/assets/test.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 94px);
+  z-index: 1;
+}
