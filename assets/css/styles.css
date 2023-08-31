@@ -141,21 +141,21 @@ body {
 
 .hero-image {
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.26), transparent), url('/assets/img/hero-juice.png');
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.26), transparent), url('../img/hero-juice.png');
     background-size: cover;
     background-position: center;
     height: calc(100vh - 94px);
     z-index: 1;
 }
 
-/*.hero-image__button {
-
-  font-family: 'Roboto', sans-serif ;
-  position: absolute;
-  top: 30%;
-  right: 15rem;
-  transform: translateY(-50%);
-  background-color: #1f1f1f;
+/*
+.hero-image__button {
+    font-family: 'Roboto', sans-serif ;
+    position: absolute;
+    top: 30%;
+    right: 15rem;
+    transform: translateY(-50%);
+    background-color: #1f1f1f;
 }
 */
 
@@ -264,7 +264,7 @@ body {
 
 .about-background {
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.26), transparent), url('/assets/img/test.jpg');
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.26), transparent), url('../img/test.jpg');
     background-size: cover;
     background-position: center;
     height: calc(100vh - 94px);
