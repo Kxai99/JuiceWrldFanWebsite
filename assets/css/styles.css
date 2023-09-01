@@ -207,8 +207,8 @@ body {
 /* Your existing styles above */
 
 .juice-portrait {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
     border-radius: 50%;
     overflow: hidden;
     top: 50px;
@@ -238,6 +238,7 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+    
 }
 
 .juice-portrait:hover::before {
@@ -269,4 +270,52 @@ body {
     background-position: center;
     height: calc(100vh - 94px);
     z-index: 1;
+}
+
+.faq-section {
+
+    margin-top: 7rem;
+    padding: 20px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.faq-item details[open] .faq-answer {
+    max-height: none;
+}
+
+/* Add this CSS to your existing styles */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 10px; /* Add padding for better readability */
+    margin: 10px 0; /* Add margin for better spacing between answers */
+    background-color: #1f1f1f4f; /* Add a background color for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.faq-answer p {
+    margin: 0; /* Remove default paragraph margin */
+    line-height: 1.6; /* Adjust line height for better readability */
+    transition: opacity 3s ease;
+}
+
+
+.faq-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    transition: opacity 0.3s ease;
 }
