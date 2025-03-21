@@ -1,12 +1,11 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('https://fonts.google.com/specimen/Roboto') format('truetype'); /* Replace with actual font file path */
-    /* You can add more font properties here if needed */
+    src: url('https://fonts.google.com/specimen/Roboto') format('truetype');
 }
 
 body {
     background-color: #161616;
-    font-family: 'Roboto', sans-serif; /* Use the font-family name defined earlier */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     color: #f2f2f2;
 }
@@ -19,7 +18,7 @@ body {
     overflow: hidden;
     padding: 10px 20px;
     box-shadow: 0 15px 20px 15 #0000001a;
-    position: relative; /* Set position to relative */
+    position: relative;
 }
 
 .logo {
@@ -42,8 +41,8 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    flex-grow: 1; /* Allow the navigation links to grow and take up remaining space */
-    justify-content: center; /* Horizontally center the navigation links */
+    flex-grow: 1;
+    justify-content: center;
     margin-right: 200px;
 }
 
@@ -52,24 +51,24 @@ body {
     padding: 14px 10px;
     font-size: 17px;
     text-decoration: none;
-    margin-right: 100px; /* Adjust this for spacing between links */
+    margin-right: 100px;
     position: relative;
 }
 
 .nav-links a:not(:last-child)::after {
     content: '';
     position: absolute;
-    width: 2px; /* Adjust the width of the bar */
-    height: 70%; /* Adjust the height of the bar */
-    background-color: #3b3b3b; /* Adjust the color of the bars between the elements */
-    right: -50px; /* Position the bar to the right of the link */
-    top: 50%; /* Position the bar vertically in the middle of the link */
-    transform: translateY(-50%); /* Center the bar vertically */
-    transition: background-color 0.3s ease; /* Add transition for the bar */
+    width: 2px;
+    height: 70%;
+    background-color: #3b3b3b;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
 }
 
 .nav-links a:last-child {
-    margin-right: 0; /* Remove margin from the last link */
+    margin-right: 0;
 }
 
 .nav-links a {
@@ -82,7 +81,7 @@ body {
 }
 
 .Stats {
-    margin-top: 75px; /* Changes the spacing between the welcome message and the nav bar */
+    margin-top: 75px;
     text-align: center;
 }
 
@@ -96,7 +95,6 @@ body {
 }
 
 .box {
-    /* Changes the information under the stream numbers */
     flex: 1;
     margin: 50px;
     text-align: center;
@@ -104,7 +102,6 @@ body {
 }
 
 .box span {
-    /* Changes the information // the stream numbers */
     font-size: 75px;
     display: block;
 }
@@ -122,14 +119,13 @@ body {
     width: auto;
     display: block;
     margin: 0 auto;
-    /* Remove filter: invert(100%); */
-    transition: filter 0.3s ease; /* Add transition for the filter */
+    transition: filter 0.3s ease;
 }
 
 .box .spotify:hover,
 .box .soundcloud:hover,
 .box .youtube:hover {
-    filter: brightness(0.7); /* Adjust the value for the desired color effect */
+    filter: brightness(0.7);
 }
 
 .box .pSpotify,
@@ -147,17 +143,6 @@ body {
     height: calc(100vh - 94px);
     z-index: 1;
 }
-
-/*
-.hero-image__button {
-    font-family: 'Roboto', sans-serif ;
-    position: absolute;
-    top: 30%;
-    right: 15rem;
-    transform: translateY(-50%);
-    background-color: #1f1f1f;
-}
-*/
 
 .btn {
     position: absolute;
@@ -204,8 +189,6 @@ body {
     font-weight: bold !important;
 }
 
-/* Your existing styles above */
-
 .juice-portrait {
     width: 13rem;
     height: 13rem;
@@ -227,7 +210,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(231, 59, 88, 0.3);
-    opacity: 0; /* Start with transparent */
+    opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
     z-index: 1;
@@ -238,11 +221,9 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    
 }
 
 .juice-portrait:hover::before {
-    /* Show the overlay on hover */
     opacity: 1;
 }
 
@@ -273,7 +254,6 @@ body {
 }
 
 .faq-section {
-
     margin-top: 7rem;
     padding: 20px;
     align-items: center;
@@ -288,34 +268,1167 @@ body {
     font-size: 1.5rem;
 }
 
-
 .faq-item details[open] .faq-answer {
     max-height: none;
 }
 
-/* Add this CSS to your existing styles */
 .faq-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    padding: 10px; /* Add padding for better readability */
-    margin: 10px 0; /* Add margin for better spacing between answers */
-    background-color: #1f1f1f4f; /* Add a background color for contrast */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #1f1f1f4f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: opacity 0.3s ease;
 }
 
 .faq-answer p {
-    margin: 0; /* Remove default paragraph margin */
-    line-height: 1.6; /* Adjust line height for better readability */
+    margin: 0;
+    line-height: 1.6;
     transition: opacity 3s ease;
 }
 
-
 .faq-list {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
     margin: 0;
     transition: opacity 0.3s ease;
+}
+
+.music-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.album-section, .singles-section, .music-timeline, .music-player-section {
+    margin-bottom: 50px;
+}
+
+.music-container h2 {
+    color: rgb(231, 59, 88);
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.albums-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.album-card {
+    width: 300px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-10px);
+}
+
+.album-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.album-info {
+    padding: 15px;
+}
+
+.album-info h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.album-info p {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.popular-tracks {
+    color: rgb(231, 59, 88) !important;
+    font-style: italic;
+}
+
+.singles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.single-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.single-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.single-card p {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(231, 59, 88);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -14px;
+    background-color: #161616;
+    border: 4px solid rgb(231, 59, 88);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -14px;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: rgb(231, 59, 88);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-content p {
+    margin-bottom: 5px;
+}
+
+.streaming-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.streaming-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.streaming-links a:hover {
+    transform: translateY(-10px);
+}
+
+.streaming-links img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .albums-container {
+        justify-content: center;
+    }
+    
+    .album-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .singles-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item::after {
+        left: 22px;
+        right: auto;
+    }
+    
+    .timeline-item:nth-child(even)::after {
+        left: 22px;
+    }
+    
+    .streaming-links {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+.merch-image {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+
+.merch-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.merch-item:hover .merch-image::before {
+    opacity: 1;
+}
+
+.merch-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.merch-item:hover .merch-image img {
+    transform: scale(1.05);
+}
+
+.merch-info {
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.merch-item:hover .merch-info {
+    background-color: #252525;
+}
+
+.merch-info h3 {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.merch-item:hover .merch-info h3 {
+    color: rgb(231, 59, 88);
+}
+
+.merch-price {
+    color: rgb(231, 59, 88);
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.merch-price::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(231, 59, 88);
+    transition: width 0.3s ease;
+}
+
+.merch-item:hover .merch-price::after {
+    width: 100%;
+}
+
+.merch-description {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.merch-sizes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.merch-sizes span {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #2e2e2e;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.merch-sizes span:hover {
+    background-color: rgb(231, 59, 88);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.merch-sizes span.active {
+    background-color: rgb(231, 59, 88);
+    color: white;
+    box-shadow: 0 4px 8px rgba(231, 59, 88, 0.3);
+}
+
+.merch-button {
+    background-color: rgb(231, 59, 88);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.merch-button:hover {
+    background-color: #d63553;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 59, 88, 0.4);
+}
+
+.merch-category h2 {
+    color: rgb(231, 59, 88);
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.merch-category h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: rgb(231, 59, 88);
+}
+
+.merch-disclaimer {
+    text-align: center;
+    margin: 30px auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid rgb(231, 59, 88);
+}
+
+.merch-disclaimer a {
+    color: rgb(231, 59, 88);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.merch-disclaimer a:hover {
+    color: #ff3b6b;
+    text-decoration: underline;
+}
+
+.newsletter-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-juice.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.newsletter-section h2 {
+    color: rgb(231, 59, 88);
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.newsletter-section p {
+    color: white;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.newsletter-button {
+    background-color: rgb(231, 59, 88);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 0 30px 30px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.newsletter-button:hover {
+    background-color: #d63553;
+}
+
+@media screen and (max-width: 768px) {
+    .merch-items {
+        justify-content: center;
+    }
+    
+    .merch-item {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .merch-image {
+        height: 250px;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px;
+    }
+    
+    .newsletter-form input,
+    .newsletter-button {
+        width: 100%;
+        border-radius: 30px;
+    }
+    
+    .merch-category h2 {
+        font-size: 28px;
+    }
+    
+    .merch-price {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .merch-image {
+        height: 200px;
+    }
+    
+    .merch-info h3 {
+        font-size: 18px;
+    }
+    
+    .merch-sizes span {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    .merch-disclaimer {
+        font-size: 13px;
+        padding: 15px;
+    }
+    
+    .newsletter-section h2 {
+        font-size: 24px;
+    }
+    
+    .newsletter-section p {
+        font-size: 14px;
+    }
+}
+
+.about-hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-juice.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.about-hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(231, 59, 88);
+}
+
+.about-dates {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.about-hero-quote {
+    font-style: italic;
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-left: 4px solid rgb(231, 59, 88);
+    padding-left: 15px;
+    text-align: left;
+}
+
+.about-quote-song {
+    font-size: 18px;
+    text-align: right;
+    margin-top: 10px;
+    color: rgb(231, 59, 88);
+}
+
+.about-nav {
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+}
+
+.about-nav li {
+    padding: 15px 0;
+}
+
+.about-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.about-nav-link:hover {
+    color: rgb(231, 59, 88);
+}
+
+.about-nav-link.active {
+    color: rgb(231, 59, 88);
+}
+
+.about-nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background-color: rgb(231, 59, 88);
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.about-section {
+    margin-bottom: 80px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: none;
+}
+
+.about-section.active {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+}
+
+.about-section-header {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.about-section-header h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: rgb(231, 59, 88);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-section-indicator {
+    width: 60px;
+    height: 4px;
+    background-color: rgb(231, 59, 88);
+}
+
+.about-section-flex {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-section-image {
+    flex: 1;
+}
+
+.about-section-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-section-text {
+    flex: 1;
+}
+
+.about-section-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about-section-text h3 {
+    color: rgb(231, 59, 88);
+    margin: 30px 0 15px;
+    font-size: 24px;
+}
+
+.influences-list {
+    list-style: none;
+    padding: 0;
+}
+
+.influences-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.influences-list li::before {
+    content: '•';
+    color: rgb(231, 59, 88);
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.influences-list span {
+    font-weight: bold;
+    color: rgb(231, 59, 88);
+}
+
+.style-image {
+    position: relative;
+}
+
+.style-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-style: italic;
+}
+
+.career-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.career-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    width: 4px;
+    background: rgb(231, 59, 88);
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 160px;
+}
+
+.timeline-year {
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(231, 59, 88);
+}
+
+.timeline-entry:after {
+    content: '';
+    position: absolute;
+    left: 112px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #161616;
+    border: 4px solid rgb(231, 59, 88);
+    top: 0;
+}
+
+.timeline-content {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: rgb(231, 59, 88);
+    font-size: 22px;
+}
+
+.legacy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.legacy-quote {
+    font-size: 22px;
+    font-style: italic;
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid rgb(231, 59, 88);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.legacy-quote-author {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(231, 59, 88);
+}
+
+.legacy-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.legacy-point {
+    display: flex;
+    gap: 20px;
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.legacy-point:hover {
+    transform: translateY(-5px);
+}
+
+.legacy-icon {
+    font-size: 30px;
+    color: rgb(231, 59, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(231, 59, 88, 0.15);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.legacy-text h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgb(231, 59, 88);
+}
+
+.legacy-text p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.documentary-promo {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/test.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.documentary-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.documentary-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(231, 59, 88);
+}
+
+.documentary-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.documentary-button {
+    display: inline-block;
+    background-color: rgb(231, 59, 88);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.documentary-button:hover {
+    background-color: #ca3554;
+}
+
+@media screen and (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .about-hero-content h2 {
+        font-size: 28px;
+    }
+    
+    .about-hero-quote {
+        font-size: 18px;
+    }
+    
+    .about-nav ul {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    
+    .about-nav-link {
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+    
+    .about-section-flex {
+        flex-direction: column;
+    }
+    
+    .timeline-entry {
+        padding-left: 140px;
+    }
+    
+    .timeline-year {
+        width: 80px;
+        font-size: 18px;
+    }
+    
+    .career-timeline::before {
+        left: 100px;
+    }
+    
+    .timeline-entry:after {
+        left: 92px;
+    }
+    
+    .legacy-points {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-section-header h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-hero {
+        height: 400px;
+    }
+    
+    .about-hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .about-hero-content h2 {
+        font-size: 22px;
+    }
+    
+    .about-dates {
+        font-size: 16px;
+    }
+    
+    .about-hero-quote {
+        font-size: 16px;
+    }
+    
+    .about-nav-link {
+        padding: 15px 10px;
+        font-size: 13px;
+    }
+    
+    .timeline-entry {
+        padding-left: 120px;
+    }
+    
+    .timeline-year {
+        width: 60px;
+        font-size: 16px;
+    }
+    
+    .career-timeline::before {
+        left: 80px;
+    }
+    
+    .timeline-entry:after {
+        left: 72px;
+    }
+    
+    .legacy-point {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .legacy-quote {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+.music-player-container {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.music-player-header {
+    margin-bottom: 30px;
+}
+
+.music-player-header h2 {
+    color: rgb(231, 59, 88);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.music-player-header p {
+    color: #cccccc;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.apple-music-embed {
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    background-color: #1f1f1f;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .music-player-container {
+        margin: 40px auto;
+    }
+    
+    .music-player-header h2 {
+        font-size: 28px;
+    }
+    
+    .music-player-header p {
+        font-size: 16px;
+    }
+    
+    .apple-music-embed iframe {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .music-player-header h2 {
+        font-size: 24px;
+    }
+    
+    .music-player-header p {
+        font-size: 14px;
+    }
+    
+    .apple-music-embed iframe {
+        height: 350px;
+    }
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.merch-item {
+    width: 300px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.merch-item.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.merch-item:hover {
+    transform: translateY(-10px);
+}
+
+.merch-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.merch-category {
+    margin-bottom: 50px;
+}
+
+.merch-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
