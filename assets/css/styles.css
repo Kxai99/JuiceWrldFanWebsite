@@ -1432,3 +1432,423 @@ body {
     justify-content: center;
     gap: 30px;
 }
+
+/* Stats Page Styles */
+.stats-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-juice.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.stats-hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: rgb(231, 59, 88);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.stats-subtitle {
+    font-size: 20px;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.stats-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.stats-platform {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: #161616;
+}
+
+.stats-icon {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover .stats-icon {
+    transform: scale(1.1);
+}
+
+.stats-number-container {
+    padding: 30px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #161616, #252525);
+    position: relative;
+}
+
+.stats-number-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgb(231, 59, 88);
+}
+
+.stream-number {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(231, 59, 88);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stats-label {
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+}
+
+.stats-details {
+    padding: 25px;
+}
+
+.stats-detail-item {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: rgb(231, 59, 88);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    color: #cccccc;
+}
+
+.stats-cta {
+    display: inline-block;
+    background-color: rgb(231, 59, 88);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stats-cta:hover {
+    background-color: #ca3554;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(231, 59, 88, 0.3);
+}
+
+.stats-achievements {
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.stats-achievements h2 {
+    color: rgb(231, 59, 88);
+    font-size: 36px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.stats-achievements h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 3px;
+    background-color: rgb(231, 59, 88);
+}
+
+.achievements-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievement-item {
+    background-color: #252525;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-icon {
+    font-size: 40px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.achievement-content h3 {
+    color: rgb(231, 59, 88);
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.achievement-content p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.stats-chart-section {
+    max-width: 1000px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.stats-chart-section h2 {
+    color: rgb(231, 59, 88);
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.stats-chart {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.chart-bar-container {
+    margin-bottom: 20px;
+}
+
+.chart-bar-container:last-child {
+    margin-bottom: 0;
+}
+
+.chart-label {
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.chart-bar {
+    height: 40px;
+    background: linear-gradient(to right, rgb(231, 59, 88), #ff3b6b);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(231, 59, 88, 0.3);
+    opacity: 0;
+}
+
+.chart-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, 
+                rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, 
+                rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
+    background-size: 25px 25px;
+    animation: move-background 2s linear infinite;
+}
+
+@keyframes move-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+/* Media Queries for Stats Page */
+@media screen and (max-width: 768px) {
+    .stats-hero h1 {
+        font-size: 36px;
+    }
+    
+    .stats-subtitle {
+        font-size: 18px;
+    }
+    
+    .stream-number {
+        font-size: 48px;
+    }
+    
+    .stats-label {
+        font-size: 18px;
+    }
+    
+    .stats-achievements h2, 
+    .stats-chart-section h2 {
+        font-size: 28px;
+    }
+    
+    .achievement-item {
+        padding: 20px;
+    }
+    
+    .achievement-icon {
+        font-size: 32px;
+        margin-right: 15px;
+    }
+    
+    .stats-chart {
+        padding: 20px;
+    }
+    
+    .chart-bar {
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .stats-hero h1 {
+        font-size: 28px;
+    }
+    
+    .stats-subtitle {
+        font-size: 16px;
+    }
+    
+    .stream-number {
+        font-size: 40px;
+    }
+    
+    .stats-achievements h2, 
+    .stats-chart-section h2 {
+        font-size: 24px;
+    }
+    
+    .achievement-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .achievement-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .chart-bar {
+        height: 30px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Stats Animation Styles */
+.animating-stat {
+    position: relative;
+}
+
+.animating-stat::after {
+    content: '|';
+    position: absolute;
+    right: -8px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.stat-highlight {
+    animation: highlight 0.5s ease;
+}
+
+@keyframes highlight {
+    0% { color: white; transform: scale(1.1); }
+    100% { color: rgb(231, 59, 88); transform: scale(1); }
+}
+
+.chart-bar {
+    opacity: 0;
+}
+
+/* Hide emoji on load for better animation */
+.achievement-icon {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Make sure the stats-container has proper z-index */
+.stats-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Add additional shadow effect on hover for buttons */
+.stats-cta {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stats-cta:hover {
+    box-shadow: 0 6px 15px rgba(231, 59, 88, 0.3);
+}
